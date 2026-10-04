@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Lalit Mahale — creative developer building web, Python, and AI projects. I turn curiosity into code." />
+    <meta name="author" content="Lalit Mahale" />
+    <title>Lalit Mahale | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to main content</a>
+    <div class="page-bg" aria-hidden="true">
+      <div class="grid-overlay"></div>
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg site-nav" aria-label="Primary">
+        <div class="container nav-inner">
+          <a class="navbar-brand brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">LM</span>
+            <span class="brand-name">Lalit Mahale</span>
+          </a>
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              type="button"
+              id="theme-toggle"
+              aria-label="Switch to light theme"
+            >
+              <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#primaryNav"
+              aria-controls="primaryNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-name">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 hero-copy reveal">
+              <p class="eyebrow">Creative developer · Web · Python · AI</p>
+              <h1 id="hero-name">Lalit Mahale</h1>
+              <p class="tagline">I turn curiosity into code.</p>
+              <p class="hero-intro">
+                I build digital experiences by combining creativity, logic and technology.
+                From responsive websites to AI-powered projects, I enjoy turning ideas into
+                real working solutions.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-glow" href="#projects">View My Work</a>
+                <a class="btn btn-ghost" href="#contact">Contact Me</a>
+              </div>
+            </div>
+            <div class="col-lg-6 hero-visual reveal" aria-hidden="true">
+              <div class="code-stage">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="code-window">
+                  <div class="code-chrome">
+                    <span class="dot red"></span>
+                    <span class="dot amber"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">curiosity.py</span>
+                  </div>
+                  <pre class="code-body"><code><span class="tok-kw">class</span> <span class="tok-fn">Developer</span>:
+    <span class="tok-kw">def</span> <span class="tok-fn">__init__</span>(self):
+        self.name = <span class="tok-str">"Lalit Mahale"</span>
+        self.stack = [<span class="tok-str">"web"</span>, <span class="tok-str">"python"</span>, <span class="tok-str">"ai"</span>]
+
+    <span class="tok-kw">def</span> <span class="tok-fn">build</span>(self, idea):
+        <span class="tok-kw">return</span> idea.to_code()</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">01</p>
+            <h2 id="about-title">About Me</h2>
+            <p class="section-lead">
+              I am a creative developer interested in web development, Python, AI, and
+              building practical projects. I enjoy turning ideas into functional and
+              visually appealing digital experiences.
+            </p>
+          </header>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="info-card">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <h3>Web Development</h3>
+                <p>Responsive interfaces with HTML, CSS, JavaScript and Bootstrap — built to feel fast and considered.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="info-card">
+                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                <h3>AI &amp; Computer Vision</h3>
+                <p>Face recognition, image classification and applied vision systems that solve real access and analysis problems.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="info-card">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+                <h3>Python</h3>
+                <p>From Flask backends to data workflows, Python is how I prototype ideas and ship working tools.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="info-card">
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                <h3>Problem Solving</h3>
+                <p>I like breaking messy problems into clear steps, then turning those steps into products people can use.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">02</p>
+            <h2 id="skills-title">Skills</h2>
+            <p class="section-lead">A focused stack for building websites, data views and intelligent applications.</p>
+          </header>
+          <div class="skill-grid">
+            <article class="skill-card reveal" data-level="92"><span class="skill-ring"></span><h3>HTML</h3></article>
+            <article class="skill-card reveal" data-level="90"><span class="skill-ring"></span><h3>CSS</h3></article>
+            <article class="skill-card reveal" data-level="82"><span class="skill-ring"></span><h3>JavaScript</h3></article>
+            <article class="skill-card reveal" data-level="86"><span class="skill-ring"></span><h3>Bootstrap</h3></article>
+            <article class="skill-card reveal" data-level="84"><span class="skill-ring"></span><h3>Python</h3></article>
+            <article class="skill-card reveal" data-level="76"><span class="skill-ring"></span><h3>SQL</h3></article>
+            <article class="skill-card reveal" data-level="72"><span class="skill-ring"></span><h3>Power BI</h3></article>
+            <article class="skill-card reveal" data-level="74"><span class="skill-ring"></span><h3>Flask</h3></article>
+            <article class="skill-card reveal" data-level="80"><span class="skill-ring"></span><h3>Git/GitHub</h3></article>
+            <article class="skill-card reveal" data-level="78"><span class="skill-ring"></span><h3>Computer Vision</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">03</p>
+            <h2 id="projects-title">Projects</h2>
+            <p class="section-lead">Selected work across AI systems, computer vision and interactive web interfaces.</p>
+          </header>
+          <div class="row g-4">
+            <div class="col-lg-6 reveal">
+              <article class="project-card">
+                <p class="project-kicker">01 · Computer Vision</p>
+                <h3>AI-Based Door Opening System</h3>
+                <p>An AI-powered access control system using face recognition and behavioral risk analysis.</p>
+                <ul class="tech-list">
+                  <li>Python</li>
+                  <li>OpenCV</li>
+                  <li>Face Recognition</li>
+                  <li>Flask</li>
+                  <li>PyQt5</li>
+                  <li>Raspberry Pi</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-6 reveal">
+              <article class="project-card">
+                <p class="project-kicker">02 · Deep Learning</p>
+                <h3>Skin Cancer Detection Using CNN</h3>
+                <p>A deep-learning based image classification project for skin lesion analysis.</p>
+                <ul class="tech-list">
+                  <li>Python</li>
+                  <li>TensorFlow</li>
+                  <li>CNN</li>
+                  <li>MobileNetV2</li>
+                  <li>DenseNet201</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-6 reveal">
+              <article class="project-card">
+                <p class="project-kicker">03 · Web Interface</p>
+                <h3>E-Commerce / D-Mart Website</h3>
+                <p>A responsive shopping interface with product categories, cart functionality and JavaScript interactions.</p>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-6 reveal">
+              <article class="project-card">
+                <p class="project-kicker">04 · Product Design</p>
+                <h3>Pet Appointment Website</h3>
+                <p>A responsive pet appointment booking interface with pet details, breed suggestions, image upload and interactive form elements.</p>
+                <ul class="tech-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="section journey" aria-labelledby="journey-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">04</p>
+            <h2 id="journey-title">Journey</h2>
+            <p class="section-lead">A living timeline of learning, building and becoming a professional developer.</p>
+          </header>
+          <div class="journey-track" id="journey-track">
+            <svg class="journey-svg" id="journey-svg" aria-hidden="true">
+              <path class="journey-path-base" id="journey-path-base" fill="none"></path>
+              <path class="journey-path-draw" id="journey-path-draw" fill="none"></path>
+            </svg>
+            <article class="journey-item" data-year="2021">
+              <button class="journey-node" type="button" aria-label="2021">
+                <span>21</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2021</p>
+                <h3>Started my academic journey</h3>
+                <p>Laid the foundation for structured learning and began thinking about technology as a career path.</p>
+              </div>
+            </article>
+            <article class="journey-item" data-year="2022">
+              <button class="journey-node" type="button" aria-label="2022">
+                <span>22</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2022</p>
+                <h3>Started exploring programming</h3>
+                <p>Wrote first programs, learned how logic translates into code, and got curious about how software is made.</p>
+              </div>
+            </article>
+            <article class="journey-item" data-year="2023">
+              <button class="journey-node" type="button" aria-label="2023">
+                <span>23</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2023</p>
+                <h3>Built technical projects</h3>
+                <p>Moved from tutorials to original work — practicing HTML, CSS and JavaScript by shipping complete pages.</p>
+              </div>
+            </article>
+            <article class="journey-item" data-year="2024">
+              <button class="journey-node" type="button" aria-label="2024">
+                <span>24</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2024</p>
+                <h3>Explored Python, AI and data technologies</h3>
+                <p>Expanded into Python, SQL, Power BI and computer vision, connecting data skills with intelligent applications.</p>
+              </div>
+            </article>
+            <article class="journey-item" data-year="2025">
+              <button class="journey-node" type="button" aria-label="2025">
+                <span>25</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2025</p>
+                <h3>Worked on web and AI projects</h3>
+                <p>Built applied systems such as face-recognition access control and CNN-based medical image classification.</p>
+              </div>
+            </article>
+            <article class="journey-item" data-year="2026">
+              <button class="journey-node" type="button" aria-label="2026">
+                <span>26</span>
+              </button>
+              <div class="journey-card">
+                <p class="journey-year">2026</p>
+                <h3>Building professional projects and improving my skills</h3>
+                <p>Focusing on polished, production-minded work — stronger UI, cleaner code, and projects that belong in a professional portfolio.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">05</p>
+            <h2 id="contact-title">Contact</h2>
+            <p class="section-lead">Have an idea, a collaboration, or a role in mind? Send a message and I will get back to you.</p>
+          </header>
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5 reveal">
+              <div class="contact-aside">
+                <a class="contact-link" href="https://github.com/lalitpMahale" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>
+                    <strong>GitHub</strong>
+                    <em>github.com/lalitpMahale</em>
+                  </span>
+                </a>
+                <a class="contact-link" href="https://www.linkedin.com/in/lalit-mahale" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                  <span>
+                    <strong>LinkedIn</strong>
+                    <em>Connect professionally</em>
+                  </span>
+                </a>
+                <a class="contact-link" href="mailto:lalitpmahale@gmail.com">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    <strong>Email</strong>
+                    <em>lalitpmahale@gmail.com</em>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal">
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                <button class="btn btn-glow" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-name">Lalit Mahale</p>
+          <p class="footer-tag">I turn curiosity into code.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/lalitpMahale" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lalit-mahale" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:lalitpmahale@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Lalit Mahale. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
