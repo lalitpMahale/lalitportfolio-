@@ -198,7 +198,7 @@
 
       var subject = encodeURIComponent("Portfolio message from " + name);
       var body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
-      window.location.href = "mailto:lalitpmahale@gmail.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:lalitmahale922@gmail.com?subject=" + subject + "&body=" + body;
       showStatus("Opening your email app to send the message.", true);
       form.reset();
     });
@@ -324,3 +324,10 @@
     updateOnScroll();
   }
 })();
+
+
+
+// --------------------open project in new tab--------------------//
+function openProject() {
+  window.open("https://petappointment-webpage-3ufn-m0jlmp4t5-lalitpmahale.vercel.app/", "_blank");
+}

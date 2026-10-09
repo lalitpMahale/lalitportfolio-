@@ -1,32 +1,68 @@
 :root {
   --bg: #05070f;
+  /* -bg: #0b0a09; */
   --bg-elevated: #0b1220;
+   /* --bg-elevated: #15110e; */
   --bg-card: rgba(14, 22, 40, 0.72);
+  /* --bg-card: rgba(30, 24, 19, 0.78); */
+
   --text: #eef4ff;
-  --muted: #9aa8c7;
+   /* --text: #fff7ed; */
+   
+  
+  /* --muted: #9aa8c7; */
+   --muted: #b8aaa0;
+
   --accent: #3ee0ff;
-  --accent-2: #7c6bff;
-  --accent-3: #4d7cff;
-  --line: rgba(130, 170, 255, 0.18);
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-  --radius: 22px;
+  --accent: #f97316;       /* Main Orange */
+  /* --accent-2: #7c6bff; */
+  --accent-2: #fb923c;     /* Soft Orange */
+  /* --accent-3: #4d7cff; */
+    --accent-3: #f59e0b;     /* Amber */
+  /* --line: rgba(130, 170, 255, 0.18); */
+    --line: rgba(251, 146, 60, 0.16);
+  /* --shadow: 0 24px 60px rgba(0, 0, 0, 0.35); */
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  /* --radius: 22px; */
+   --radius: 22px;
   --header-h: 78px;
   --font-display: "Syne", sans-serif;
   --font-body: "Outfit", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+
+
+  
+
+
+
+
 }
 
+
+
+
 [data-theme="light"] {
-  --bg: #f4f6fb;
+  /* --bg: #f4f6fb; */
+   --bg: #fff7ed;
+  /* --bg-elevated: #ffffff; */
   --bg-elevated: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.78);
-  --text: #101828;
-  --muted: #52607a;
-  --accent: #0ea5c9;
-  --accent-2: #5b4dff;
+  /* --bg-card: rgba(255, 255, 255, 0.78); */
+   --bg-card: rgba(255, 255, 255, 0.85);
+  /* --text: #101828; */
+   --text: #1c1917;
+  /* --muted: #52607a; */
+    --muted: #57534e;
+  /* --accent: #0ea5c9; */
+   --accent: #f97316;      /* Orange */
+  /* --accent-2: #5b4dff; */
+  --accent-2: #ea580c;    /* Dark Orange */
   --accent-3: #2563eb;
-  --line: rgba(16, 24, 40, 0.12);
-  --shadow: 0 18px 40px rgba(28, 45, 84, 0.1);
+   --accent-3: #fb923c;    /* Light Orange */
+  /* --line: rgba(16, 24, 40, 0.12); */
+  /* --shadow: 0 18px 40px rgba(28, 45, 84, 0.1); */
+
+   --line: rgba(124, 45, 18, 0.12);
+  --shadow: 0 18px 40px rgba(194, 65, 12, 0.12);
 }
 
 *,
@@ -543,6 +579,7 @@ a {
 .project-card:hover {
   transform: translateY(-8px);
   border-color: color-mix(in srgb, var(--accent-2) 50%, var(--line));
+  cursor: pointer;
 }
 
 .project-card:hover::after {
