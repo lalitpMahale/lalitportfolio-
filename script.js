@@ -328,6 +328,11 @@
 
 
 // --------------------open project in new tab--------------------//
-function openProject() {
-  window.open("https://petappointment-webpage-3ufn-m0jlmp4t5-lalitpmahale.vercel.app/", "_blank");
+function openProject(link) {
+  window.open(link,"_blank");
 }
+
+
+
+
+
