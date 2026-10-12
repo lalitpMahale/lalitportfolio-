@@ -324,13 +324,24 @@
     updateOnScroll();
   }
 })();
+// -------------------open skills in new tab -------------------------//
+document.querySelectorAll(".skill-card").forEach(card => {
+    card.addEventListener("click", function () {
+        const link = this.dataset.link;
+
+        if (link) {
+            window.open(link, "_blank");
+        }
+    });
+});
+
 
 
 
 // --------------------open project in new tab--------------------//
-function openProject(link) {
-  window.open(link,"_blank");
-}
+
+
+
 
 
 

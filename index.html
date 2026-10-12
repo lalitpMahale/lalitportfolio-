@@ -173,16 +173,16 @@
             <p class="section-lead">A focused stack for building websites, data views and intelligent applications.</p>
           </header>
           <div class="skill-grid">
-            <article class="skill-card reveal" data-level="92"><span class="skill-ring"></span><h3>HTML</h3></article>
+            <article class="skill-card reveal" data-level="92" onclick="openProject('https://drive.google.com/file/d/1IcTy6yTwYVvhD4Io9coKWm-Vm4stOWqh/view?usp=sharing')"><span class="skill-ring"></span><h3>HTML</h3></article>
             <article class="skill-card reveal" data-level="90"><span class="skill-ring"></span><h3>CSS</h3></article>
             <article class="skill-card reveal" data-level="82"><span class="skill-ring"></span><h3>JavaScript</h3></article>
             <article class="skill-card reveal" data-level="86"><span class="skill-ring"></span><h3>Bootstrap</h3></article>
-            <article class="skill-card reveal" data-level="84"><span class="skill-ring"></span><h3>Python</h3></article>
-            <article class="skill-card reveal" data-level="76"><span class="skill-ring"></span><h3>SQL</h3></article>
+            <article class="skill-card reveal" data-level="84" onclick="openProject('https://drive.google.com/file/d/1juKhSZKRwQ2EOLPebVKn04eNqo52rSZt/view?usp=sharing')"><span class="skill-ring"></span><h3>Python</h3></article>
+            <article class="skill-card reveal" data-level="76" onclick="openProject('https://drive.google.com/file/d/1dWiPsLUoGmtzKCA9CaE0oZHE-090GB_i/view?usp=sharing')" ><span class="skill-ring"></span><h3>SQL</h3></article>
             <article class="skill-card reveal" data-level="72"><span class="skill-ring"></span><h3>Power BI</h3></article>
             <article class="skill-card reveal" data-level="74"><span class="skill-ring"></span><h3>Flask</h3></article>
-            <article class="skill-card reveal" data-level="80"><span class="skill-ring"></span><h3>Git/GitHub</h3></article>
-            <article class="skill-card reveal" data-level="78"><span class="skill-ring"></span><h3>Computer Vision</h3></article>
+            <article class="skill-card reveal" data-level="80" onclick="openProject('https://drive.google.com/file/d/1T33V-qanILDn6j7NsbPVuD0HgSEXwYRj/view?usp=sharing')"><span class="skill-ring"></span><h3>Git/GitHub</h3></article>
+            <article class="skill-card reveal" data-level="78" onclick="openProject('https://drive.google.com/file/d/1zbwDjHj-KnZh6WF_j49CB6OcsHL5gJ7a/view?usp=sharing')"><span class="skill-ring"></span><h3>Computer Vision</h3></article>
           </div>
         </div>
       </section>
@@ -443,5 +443,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script>
+      function openProject(link) {
+  window.open(link,"_blank")
+  console.log("fuunction called")
+}
+    </script>
   </body>
 </html>

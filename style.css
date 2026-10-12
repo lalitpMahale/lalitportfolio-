@@ -526,6 +526,7 @@ a {
   text-align: center;
   padding: 1.4rem 0.8rem 1.2rem;
   transition: transform 0.25s ease;
+  cursor: pointer;
 }
 
 .skill-card:hover {
